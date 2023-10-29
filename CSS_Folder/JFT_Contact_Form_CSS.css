@@ -1,0 +1,169 @@
+/* This is the CSS page (sources and acknowledgment found in the main index page) */
+
+/* This first section makes the whole document have no white edges in the corner and gives the whole page structure */
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ }
+
+/* This section has the color and font of the whole form */
+body {font-family: Courier; color: #808080 }
+ 
+/* This section customizes the bigger div section (header + Contactform) */
+  .box {
+background: url(../Images_Folder/artbk.jpg);  /* This link backsout of this CSS Folder folder and finds the image in the Images Folder */
+background-size: cover;
+align-items: center;
+justify-content: center;
+display: flex;
+position: relative;
+padding: 50px 100px;
+min-height: 100vh;
+flex-direction: column; 
+  }
+
+  /* This decided the color and alignment of the header */
+  h1 {color: #f2f2f2;
+    text-align: center;
+  }
+
+  /* This section customizes the second larget div block (Contactform) */
+  .jftcontact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px; 
+    width: 52%;
+    opacity: 0.85;
+  }
+
+  /* This makes the contact form box solid upon the hover of a mouse */
+  .jftcontact:hover {
+    opacity: 1.0;
+  }
+  
+  /* This section customizes all the html components with type text and select (textboxes and dropdown)*/
+  input[type=text], select {
+    width: 30%;
+    right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: vertical;  
+  }
+
+  /* This section moves the last name box to the left for allignmnet*/
+  .lnamebox {
+    margin-left: 10px;
+  }
+  
+  /* This section customizes all the html components with type tel (Phonenumber section)*/
+  input[type=tel] {
+    width: 30%;
+    position:relative; 
+    left:18px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+  }
+  
+  /* This section customizes all the html components with type email (Email section)*/
+  input[type=email] {
+    width: 30%;
+    position:relative; 
+    left:48px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* This aligns the label and textarea on the same central line (b/c initally the label is way below the textarea)*/
+  .text_message * {
+   vertical-align: middle;
+  }
+  
+  /* This section customizes the text area where the user inputs a message (Body section)*/
+  .message_body {
+    width: 70%;
+    height: 100px;
+    right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: vertical;  
+  }
+  
+   /* This section justifies the bulky writings of the update agreement and the terms and condition agreement 
+      (the writings and checkboxes)*/
+   .tandc{
+    text-align: justify;
+    text-justify: inter-word;
+    width: 96%;
+    position:relative; 
+    right:-7px;
+  }
+  
+  /* This modifes the last button into the right corner and a few inches above the lower margin. 
+     I had to do this modification separate beacuse it would have also affected the other button (Update button) as well. */
+  .last_button {
+    background-color: #D3D3D3;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position:relative; 
+    left:85%;  
+    margin-bottom: 25px;
+  }
+
+  /* This makes the buttons solid and a difffernt color upon the hover of a mouse */
+    .last_button:hover {
+      background-color: #5A5A5A;
+    }
+    
+  /* This makes positions the back link to the corner right*/ 
+  .back_link{
+    position: relative;
+    text-align: right;
+  }
+
+  /* This makes the contact form input boxes back to their normal color is goes through the validation*/
+  .required_sections.success input{
+    border: 1px solid #ccc;
+  }
+
+  /* This makes the small sections invisible to the user to wait until the user commits an error*/
+  .required_sections small{
+    visibility: hidden;
+    color: red;
+  }
+
+  /* This makes the contact form input boxes red*/
+  .required_sections.error input{
+  border: 2px solid red;
+  }
+
+  /* This makes the small sections visible to the user beacuse the user commited an error*/
+  .required_sections.error small{
+	visibility: visible;
+  }
+
+  /* This customizes the error class that the php outputs*/
+  .error_ss {
+  color: red;
+  font-size: x-small;
+  }

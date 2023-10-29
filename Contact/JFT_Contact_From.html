@@ -1,0 +1,140 @@
+  <!--- Jaleta Fanta Tesgera
+
+        This is my contact form. I have used a couple refrences and sources for this and the CSS, I have them in order below:
+        W3 Schools
+        Stack Overflow
+        Hostinger (for font tips)
+        Tutorialspoint 
+        Htmlcolorcodes
+        Online tutorials Youtube channel 
+        
+        I hope you enjoy the output, and for any feedback or comment please feel free to fill out my contact form, Thank you!  -->
+       
+
+
+        <html>
+
+
+        <head>
+            
+            <link rel="styleSheet" href="../CSS_Folder/JFT_Contact_Form_CSS.css"> <!--- Provides a link to the Style Sheet --> 
+          
+            <title>  Contact Jaleta Tesgera </title> <!--- The title of the contact form -->
+                
+        </head>
+    
+        <body>
+    
+          <!--- This div block division makes styling my cotact form easier -->
+          <div class = "box">
+           
+          
+           <h1 text-align="center"> Contact Me </h1> <br>  <!--- The header for the Contact Form-->
+    
+    
+           <!--- This div section includes the main components of the Contact Form -->
+            <div class="jftcontact">
+    
+              
+                <form id="form" name = "form" class="form" action="../Php_Folder/JS_Validation_Form_PHp.php" method="POST">
+                <!--- <form id = "contact_form" action="../Php_Folder/JFT_Contact_Form_PHP.php" method="POST"> -->
+    
+                  
+    
+                 <!--- Text box for the First Name -->
+                 <div class="required_sections">
+                 <label for="fname">First Name*: </label>
+                 <input type="text" id="fname" name="first_name" placeholder="First name" > 
+                 <small>Error message </small>  <!--- A small tag for the error message js -->
+                 </div>
+                
+    
+                 <!--- Text box for the Last Name -->
+                 <div class="required_sections">
+                 <label for="lname">Last Name*: </label>
+                 <input class="lnamebox" type="text" id="lname" name="last_name" placeholder="Last name" >
+                 <small>Error message</small>  <!--- A small tag for the error message js-->
+                 </div>
+               
+    
+                 <!--- Tel box for the Phone Number -->
+                 <div class="required_sections">
+                 <label for="pnumber">Phone No*: </label>
+                 <input type="tel" id="pnumber" name="phone_number" placeholder="( - - - ) - - -  - - - - " > 
+                 &nbsp; <small>Error message</small> <!--- A small tag for the error message js-->
+                 </div>
+                 
+                 
+                 <!--- Email box for the Email -->
+                 <div class="required_sections">
+                 <label for="the_email">Email*: </label>
+                 <input type="email" id="email" name="its_the_email" placeholder="example@xyz.com" > 
+                 &nbsp; &nbsp; &nbsp;<small>Error Message</small>  <!--- A small tag for the error message js-->
+                 </div>
+                 
+    
+                 <!--- Radio Button for the Preferd Mode of Contact -->
+                 <label for = "your_email">Preferred mode of Contact:  </label>
+                   <!--- Having the same name makes the user only select one radio button at a time-->
+                 <input type="radio" id="your_email" name="options" value="Email">
+                 <label for="your_email">Email</label>  &nbsp; 
+                 <input type="radio" id="your_pnumber" name="options" value="Phone"> 
+                 <label for="your_pnumber">Phone</label> <br> <br>
+                 
+                 <!--- Dropdown for the Subjects options -->
+                 <label for="subject">Subject: </label>
+                 <select id="subject" name="contact_subject" >
+                   <option value="placeholder"> </option>
+                   <option value="Inquiries">Inquiries</option>
+                   <option value="Comments">Comments</option>
+                   <option value="Business">Business</option>
+                   <option value="Other">Other</option>
+                 </select>  <br>
+                            
+                 <!--- Text box for a description of the "Other" option -->
+                 <label for="other">If other please specify: </label>
+                 <input type="text" id="other" name="other_subjects"> 
+                 
+                 <!--- Text area for a description of the individuals message -->
+                 <!--- Having the text area under a p section will help me align the label and text are on a central line -->
+                 <p class = "text_message">
+                 <label for="message_body">Body*: </label> 
+                 <textarea id="body" class = "message_body" name="the_body" placeholder="Start typing your message here."  ></textarea>   </p>
+                 &nbsp; &nbsp; &nbsp; &nbsp;  <br>
+               
+    
+                 <!--- Checkboxes for promotion and aggremment to terms and conditions -->
+                 <!--- Having a separate div block is goign to be useful in justifying these texts -->
+                 <div class = "tandc">
+                 <input type="checkbox" id="promo" name="signup_updates" value="Yes">
+                 <label for="promo">
+                   Sign me up to receive updates of any additional content on the website
+                 </label> <br> <br>
+                 <input type="checkbox" id="tandc" name="terms_and_conditions" value="Agree">
+                 <label for="tandc">
+                   I agree and accept the conditions that responses are answered according to your que, unless it's 
+                   a business proposal. Business proposals get priority. Additionally submitting multiple contacts, 
+                   or falsifying them will result in only having one response and possibly being banned from this site.
+                 </label> <br> 
+                 </div>
+    
+                 <!--- Submit Button -->
+                 <!--- I will use thee class name later in styling this button -->
+                 <button id="submit" type="submit" name="submit" class="last_button">Submit</button> <br>
+                 
+                   <!--- Provides a link to the Java Script --> 
+                 <script src="../JS_Folder/JFT_Contact_Form_JS.js"> </script>
+              </form>
+          
+             </div>
+    
+           </div>
+    
+       
+           
+        </body>
+    
+      
+    </html>
+    
+    
