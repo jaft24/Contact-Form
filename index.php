@@ -186,12 +186,12 @@ function test_input($data) {
             remarkable ability to solve problems independently and jointly in coding environments and my 
             employment. Experienced languages include Java, C++, Java Script, Kotlin, SQL, PHP, Arduino, 
             Html, and CSS. Worked with VS code, Code Blocks, GitHub, Net beans, Workbench, cPanel, XAMPP,
-            and Tableau. To learn more about me, you can find my resume attached <a href="http://jaletaftesgera.com/Resume/Jaleta_Tesgera_SWEI_Resume.pdf">here</a>. <br> <br>
+            and Tableau. To learn more about me, you can find my resume attached <a href="http://jaleta-tesgera.lovestoblog.com/Resume/Jaleta_Tesgera_SWEI_Resume.pdf">here</a>. <br> <br>
 
             This below is a contact form I designed using HTML, CSS, and Java Script that stores cookies 
             and sends me the generated emails. Your responses are validated, stored, and sent using PHP 
             and organized in SQL Workbench. The validation on this form is done using PHP, if you want the 
-            Java Script validation experience click <a href="http://jaletaftesgera.com/Contact/JFT_Contact_Form.html">here</a>. Please feel free to fill out the form. Thank you.  
+            Java Script validation experience click <a href="http://jaleta-tesgera.lovestoblog.com/Contact/JFT_Contact_Form.html">here</a>. Please feel free to fill out the form. Thank you.  
             </p>
             </div> 
             <br><br>
