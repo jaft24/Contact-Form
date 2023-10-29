@@ -191,7 +191,7 @@ function test_input($data) {
             This below is a contact form I designed using HTML, CSS, and Java Script that stores cookies 
             and sends me the generated emails. Your responses are validated, stored, and sent using PHP 
             and organized in SQL Workbench. The validation on this form is done using PHP, if you want the 
-            Java Script validation experience click <a href="http://jaleta-tesgera.lovestoblog.com/Contact/JFT_Contact_Form.html">here</a>. Please feel free to fill out the form. Thank you.  
+            Java Script validation experience click <a href="http://jaleta-tesgera.lovestoblog.com/Contact/">here</a>. Please feel free to fill out the form. Thank you.  
             </p>
             </div> 
             <br><br>
